@@ -1,0 +1,43 @@
+@media (max-width: 479px) {
+  body {
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+  .sidebar .menu-wrapper {
+    display: none;
+  }
+  .sidebar .social {
+    position: relative;
+  }
+  .main-wrapper {
+    margin-left: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-wrapper .sections {
+    height: auto;
+    padding: 0;
+  }
+  .main-wrapper .about-me-section__text {
+    padding: 1rem;
+  }
+  .main-wrapper .examples-section__figure {
+    position: relative;
+    max-width: 95vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .main-wrapper .examples-section__image {
+    width: 100%;
+    height: auto;
+  }
+  .main-wrapper .skills-block .skills-logo {
+    flex-basis: 100%;
+  }
+}

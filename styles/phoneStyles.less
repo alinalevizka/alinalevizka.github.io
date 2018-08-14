@@ -1,0 +1,55 @@
+
+
+// Mode: Phone
+@phone: ~"(max-width: 479px)";
+
+
+@media @phone {
+  body {
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    .menu-wrapper {
+      display: none;
+    }
+    .social {
+      position: relative;
+    }
+  }
+  .main-wrapper {
+    margin-left: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .sections {
+      height: auto;
+      padding: 0;
+    }
+    .about-me-section__text {
+      padding: 1rem;
+    }
+
+    .examples-section{
+      &__figure {
+        position: relative;
+        max-width: 95vw;
+        margin: 0 auto;
+        text-align: center;
+      }
+      &__image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .skills-block {
+      .skills-logo {
+        flex-basis: 100%;
+      }
+    }
+}
+}
