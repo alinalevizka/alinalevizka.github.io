@@ -1,8 +1,5 @@
 var $page = $('html, body');
 var figures = $('.examples-section__figure');
-console.log(figures);
-
-
 
 $('a[href*="#"]').click(function() {
     $page.animate({
@@ -20,7 +17,6 @@ $('div[href*="#"]').click(function() {
     return false;
 });
 
-$('.logo-caption').css('opacity', '0');
 
 $('.about-me-section__button').hover(function() {
   this.arrow = $(this).find('.without-hover');
@@ -31,18 +27,9 @@ function() {
 }
 )
 
-$('.logo').hover(function() {
-  this.logoCaption = $(this).parent().find('.logo-caption');
-  $(this.logoCaption).fadeTo('400', '0.8');
-}, function () {
-  $(this.logoCaption).fadeTo('400', '0');
-});
-
 $('.menu__item').hover(function() {
   $('.menu__items').removeClass('chosenItem1');
   $(this).parent().addClass('chosenItem1');
-
-  console.log(this.menuItems);
 },
 function(){
   $('.menu__items').removeClass('chosenItem1');

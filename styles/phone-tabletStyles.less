@@ -26,6 +26,7 @@
   .sidebar {
     position: relative;
     width: 100%;
+    height: 100vh;
     .menu-wrapper {
       display: none;
     }
@@ -38,21 +39,31 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    .about-me-section__button {
+      display: none;
+    }
     .sections {
       height: auto;
       padding: 0;
+      &__headers {
+        font-size: 12vw;
+      }
     }
     .about-me-section__text {
-      padding: 1rem;
+      padding: 2rem;
     }
 
     .examples-section{
-      &__figure {
+      .figureOdd, .figureEven {
         position: relative;
         max-width: 95vw;
         margin: 0 auto;
         text-align: center;
-        margin: 1.25rem;
+        padding: 0;
+        margin-bottom: 1rem;
+        .number-for-figureEven, .number-for-figureOdd {
+          display: none;
+        }
       }
       &__image {
         width: 100%;

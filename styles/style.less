@@ -1,4 +1,3 @@
-@desktops: ~"(min-width: 992px) and (max-width: 1199.98px)";
 
 *{
   font-family: 'Arimo', sans-serif;
@@ -101,8 +100,9 @@ i:hover, {
   .sections {
     text-align: center;
     &__headers {
-    font-size: 10vw;
-    padding-top: 6rem;
+    font-size: 6vw;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     color: black;
     }
   }
@@ -112,9 +112,9 @@ i:hover, {
     background-size: cover;
     min-height: 100vh;
     &__my-name{
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: #5a8a8a;
-      padding: 3rem;
+      padding-bottom: 3rem;
       font-weight: bolder;
     }
     &__profession{
@@ -173,13 +173,13 @@ i:hover, {
       background-color: transparent;
       .number-for-figureOdd{
         font-size: 3rem;
-        color: #974d2682;
+        color: #974d2690;
         position: absolute;
         left: 0rem;
       }
       .number-for-figureEven{
         font-size: 3rem;
-        color: #974d2682;
+        color: #974d2690;
         position: absolute;
         right: 0rem;
       }
@@ -194,7 +194,7 @@ i:hover, {
       width: 100%;
       height: auto;
       display: block;
-      border: 1px solid #974d2682;
+      border: 1px solid #974d2640;
     }
   }
   .last-section {
@@ -208,20 +208,35 @@ i:hover, {
     flex-wrap: wrap;
     .skills-logo {
       flex-basis: 33.33%;
-      padding: 2rem;
+      padding: 2.5rem;
       .logo {
         max-width: 100%;
         min-height: 50px;
         min-width: 50px;
       }
+      .logo-caption {
+        font-weight: bolder;
+      }
     }
     .corona, .archicad {
       flex-basis: 100%;
+      .archicad-padding {
+        padding-bottom: 24px;
+      }
     }
   }
 }
-
-
 .chosenItem1 {
-  background-color: #974d2682;
+  background-color: #974d2690;
+}
+
+@desctops:~"(min-width: 992px) and (max-width: 1199.98px)";
+
+@media @desctops {
+  .sidebar {
+    width: 275px;
+  }
+  .main-wrapper {
+    margin-left: 275px;
+  }
 }

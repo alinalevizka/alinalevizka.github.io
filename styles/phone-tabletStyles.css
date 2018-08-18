@@ -19,6 +19,7 @@
   .sidebar {
     position: relative;
     width: 100%;
+    height: 100vh;
   }
   .sidebar .menu-wrapper {
     display: none;
@@ -32,19 +33,33 @@
     display: flex;
     flex-direction: column;
   }
+  .main-wrapper .about-me-section__button {
+    display: none;
+  }
   .main-wrapper .sections {
     height: auto;
     padding: 0;
   }
-  .main-wrapper .about-me-section__text {
-    padding: 1rem;
+  .main-wrapper .sections__headers {
+    font-size: 12vw;
   }
-  .main-wrapper .examples-section__figure {
+  .main-wrapper .about-me-section__text {
+    padding: 2rem;
+  }
+  .main-wrapper .examples-section .figureOdd,
+  .main-wrapper .examples-section .figureEven {
     position: relative;
     max-width: 95vw;
     margin: 0 auto;
     text-align: center;
-    margin: 1.25rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .main-wrapper .examples-section .figureOdd .number-for-figureEven,
+  .main-wrapper .examples-section .figureEven .number-for-figureEven,
+  .main-wrapper .examples-section .figureOdd .number-for-figureOdd,
+  .main-wrapper .examples-section .figureEven .number-for-figureOdd {
+    display: none;
   }
   .main-wrapper .examples-section__image {
     width: 100%;

@@ -100,8 +100,9 @@ i:hover {
   text-align: center;
 }
 .main-wrapper .sections__headers {
-  font-size: 10vw;
-  padding-top: 6rem;
+  font-size: 6vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   color: black;
 }
 .main-wrapper .about-me-section {
@@ -111,9 +112,9 @@ i:hover {
   min-height: 100vh;
 }
 .main-wrapper .about-me-section__my-name {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #5a8a8a;
-  padding: 3rem;
+  padding-bottom: 3rem;
   font-weight: bolder;
 }
 .main-wrapper .about-me-section__profession {
@@ -170,13 +171,13 @@ i:hover {
 }
 .main-wrapper .examples-section__figure .number-for-figureOdd {
   font-size: 3rem;
-  color: #974d2682;
+  color: #974d2690;
   position: absolute;
   left: 0rem;
 }
 .main-wrapper .examples-section__figure .number-for-figureEven {
   font-size: 3rem;
-  color: #974d2682;
+  color: #974d2690;
   position: absolute;
   right: 0rem;
 }
@@ -190,7 +191,7 @@ i:hover {
   width: 100%;
   height: auto;
   display: block;
-  border: 1px solid #974d2682;
+  border: 1px solid #974d2640;
 }
 .main-wrapper .last-section {
   height: 4rem;
@@ -204,17 +205,32 @@ i:hover {
 }
 .main-wrapper .skills-block .skills-logo {
   flex-basis: 33.33%;
-  padding: 2rem;
+  padding: 2.5rem;
 }
 .main-wrapper .skills-block .skills-logo .logo {
   max-width: 100%;
   min-height: 50px;
   min-width: 50px;
 }
+.main-wrapper .skills-block .skills-logo .logo-caption {
+  font-weight: bolder;
+}
 .main-wrapper .skills-block .corona,
 .main-wrapper .skills-block .archicad {
   flex-basis: 100%;
 }
+.main-wrapper .skills-block .corona .archicad-padding,
+.main-wrapper .skills-block .archicad .archicad-padding {
+  padding-bottom: 24px;
+}
 .chosenItem1 {
-  background-color: #974d2682;
+  background-color: #974d2690;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .sidebar {
+    width: 275px;
+  }
+  .main-wrapper {
+    margin-left: 275px;
+  }
 }
