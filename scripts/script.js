@@ -1,4 +1,9 @@
 var $page = $('html, body');
+var figures = $('.examples-section__figure');
+console.log(figures);
+
+
+
 $('a[href*="#"]').click(function() {
     $page.animate({
         scrollTop: $($.attr(this, 'href')).offset().top

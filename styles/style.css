@@ -1,13 +1,13 @@
 * {
-  box-sizing: border-box;
   font-family: 'Arimo', sans-serif;
+  box-sizing: border-box;
 }
 body {
   background-color: #fdeacf;
   padding: 0;
   margin: 0;
   height: 100%;
-  min-width: 1024px;
+  background: radial-gradient(at top right, #5a8a8a, #fdeacf);
 }
 figure,
 h1,
@@ -25,6 +25,7 @@ i:hover {
   width: 375px;
   height: 100%;
   background-color: #5a8a8a;
+  border-right: 1px dashed #974d2682;
 }
 .sidebar .photo {
   margin: 0 auto;
@@ -58,7 +59,6 @@ i:hover {
 .sidebar .menu__items {
   width: 100%;
   height: 100%;
-  padding: 1rem;
 }
 .sidebar .menu__item {
   display: block;
@@ -68,6 +68,7 @@ i:hover {
   transition: 0.2s linear;
   width: 100%;
   height: 100%;
+  padding: 1rem;
 }
 .sidebar .menu__item:hover {
   color: white;
@@ -97,14 +98,16 @@ i:hover {
 }
 .main-wrapper .sections {
   text-align: center;
-  padding: 3rem;
 }
 .main-wrapper .sections__headers {
-  font-size: 3rem;
-  padding: 1rem;
+  font-size: 4rem;
+  padding-top: 6rem;
   color: black;
 }
 .main-wrapper .about-me-section {
+  background: url('pictures/4b511567581651.5b3e723553fbe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
 }
 .main-wrapper .about-me-section__my-name {
@@ -159,11 +162,35 @@ i:hover {
   position: relative;
   max-width: 1024px;
   margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 3rem;
   text-align: center;
+  background-color: transparent;
+}
+.main-wrapper .examples-section__figure .number-for-figureOdd {
+  font-size: 3rem;
+  color: #974d2682;
+  position: absolute;
+  left: 0rem;
+}
+.main-wrapper .examples-section__figure .number-for-figureEven {
+  font-size: 3rem;
+  color: #974d2682;
+  position: absolute;
+  right: 0rem;
+}
+.main-wrapper .examples-section .figureOdd {
+  padding-left: 5rem;
+}
+.main-wrapper .examples-section .figureEven {
+  padding-right: 5rem;
 }
 .main-wrapper .examples-section__image {
   width: 100%;
   height: auto;
+  display: block;
+  border: 1px solid #974d2682;
 }
 .main-wrapper .last-section {
   height: 4rem;
@@ -189,8 +216,13 @@ i:hover {
   flex-basis: 100%;
 }
 .chosenItem1 {
-  background-color: red;
+  background-color: #974d2682;
 }
-.chosenItem {
-  background-color: red;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .sidebar {
+    width: 275px;
+  }
+  .main-wrapper {
+    margin-left: 275px;
+  }
 }
