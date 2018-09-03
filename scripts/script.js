@@ -17,7 +17,6 @@ $('div[href*="#"]').click(function() {
     return false;
 });
 
-
 $('.about-me-section__button').hover(function() {
   this.arrow = $(this).find('.without-hover');
   $(this.arrow).addClass('far-hover');
@@ -33,4 +32,8 @@ $('.menu__item').hover(function() {
 },
 function(){
   $('.menu__items').removeClass('chosenItem1');
+});
+
+$('.phone-menu-button').click(function() {
+  $('.phone-menu').toggleClass('open-close');
 });
