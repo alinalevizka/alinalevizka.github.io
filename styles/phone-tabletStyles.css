@@ -67,11 +67,11 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) , (max-width: 575.98px) {
-  .menu-wrapper {
+  .sidebar .menu-wrapper {
     display: none;
     transition: 1s;
   }
-  .phone-menu-button {
+  .sidebar .phone-menu-button {
     display: block;
     width: 6rem;
     height: 6rem;
@@ -82,7 +82,7 @@
     text-align: center;
     position: relative;
   }
-  .phone-menu-button .fas {
+  .sidebar .phone-menu-button .fas {
     display: block;
     position: absolute;
     top: 50%;
@@ -90,7 +90,7 @@
     transform: translate(-50%, -50%);
     font-size: 2rem;
   }
-  .phone-menu {
+  .sidebar .phone-menu {
     position: absolute;
     height: 100vh;
     width: 100%;

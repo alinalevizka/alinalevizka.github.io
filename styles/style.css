@@ -88,6 +88,9 @@ i:hover {
 .sidebar .social__item {
   color: #cad8c5;
 }
+.sidebar .phone-menu-button {
+  display: none;
+}
 .main-wrapper {
   margin-left: 375px;
   position: relative;
@@ -223,8 +226,6 @@ i:hover {
 }
 .chosenItem1 {
   background-color: #974d2690;
-  border-top: 1px dashed #974d26;
-  border-bottom: 1px dashed #974d26;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .sidebar {
